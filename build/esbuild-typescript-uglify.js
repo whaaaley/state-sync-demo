@@ -8,7 +8,8 @@ let data = esbuild.buildSync({
     process.argv[2]
   ],
   bundle: true,
-  minify: true,
+  // minify: true,
+  minify: false,
   write: false,
   define: {
     PROD: true,
