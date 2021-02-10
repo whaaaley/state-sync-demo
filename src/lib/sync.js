@@ -97,4 +97,7 @@ const sync = ({ state, pages, rewrites, effects, mount }) => {
 // NOTE
 // + Should I swap PROD for NODE_ENV === 'production'?
 
-export default params => (PROD ? app : sync)(params)
+// export default params => (PROD ? app : sync)(params)
+
+// just for the demo, under normal conditions we'd use the other export
+export default params => sync(params)

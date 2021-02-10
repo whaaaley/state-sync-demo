@@ -9,11 +9,7 @@ const foobarAction = ({ demo }, dispatch) => data => {
 const Demo = (state, dispatch) => {
   return div({ class: 'demo' }, [
     div([
-      // what the heck?
-      // for some reason state.sync.id fails in prod
-      // it works in dev though
-      // race condition?
-      text(state.sync && state.sync.id)
+      text(state.sync.id)
     ]),
     div([
       text(state.demo.foobar),
