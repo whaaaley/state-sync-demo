@@ -30,15 +30,17 @@ data = typescript.transpileModule(data, {
   }
 })
 
-data = uglify.minify(data.outputText, {
-  toplevel: true,
-  compress: {
-    drop_console: true,
-    passes: 3
-  },
-  mangle: {
-    toplevel: true
-  }
-})
+// data = uglify.minify(data.outputText, {
+//   toplevel: true,
+//   compress: {
+//     drop_console: true,
+//     passes: 3
+//   },
+//   mangle: {
+//     toplevel: true
+//   }
+// })
+//
+// process.stdout.write(data.code)
 
-process.stdout.write(data.code)
+process.stdout.write(data.outputText)
