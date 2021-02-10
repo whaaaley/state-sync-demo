@@ -7,7 +7,7 @@ import Missing from './views/missing'
 
 app({
   state: {
-    src: PROD ? 'http://localhost:3000/demo' : 'https://state-sync-demo.netlify.app/demo',
+    src: PROD ? 'https://state-sync-demo.netlify.app/demo' : 'http://localhost:3000/demo',
     demo: {
       foobar: 'foobar'
     }
