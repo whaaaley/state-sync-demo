@@ -8,8 +8,7 @@ let data = esbuild.buildSync({
     process.argv[2]
   ],
   bundle: true,
-  // minify: true,
-  minify: false,
+  minify: true,
   write: false,
   define: {
     PROD: true,
@@ -31,17 +30,15 @@ data = typescript.transpileModule(data, {
   }
 })
 
-// data = uglify.minify(data.outputText, {
-//   toplevel: true,
-//   compress: {
-//     drop_console: true,
-//     passes: 3
-//   },
-//   mangle: {
-//     toplevel: true
-//   }
-// })
-//
-// process.stdout.write(data.code)
+data = uglify.minify(data.outputText, {
+  toplevel: true,
+  compress: {
+    drop_console: true,
+    passes: 3
+  },
+  mangle: {
+    toplevel: true
+  }
+})
 
-process.stdout.write(data.outputText)
+process.stdout.write(data.code)
