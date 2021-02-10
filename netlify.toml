@@ -1,0 +1,19 @@
+
+[build]
+  command = 'make'
+  publish = 'public'
+
+[[headers]]
+  for = '/*'
+  [headers.values]
+    cache-control = 'public,max-age=86400,immutable'
+
+[[headers]]
+  for = '/cache/*'
+  [headers.values]
+    cache-control = 'public,max-age=604800,immutable'
+
+[[redirects]]
+  from = '/*'
+  to = '/index.html'
+  status = 200

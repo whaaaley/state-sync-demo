@@ -1,0 +1,33 @@
+
+$white: #fff;
+$black: #000;
+
+// RGB From LAB Sliders
+$dark-600: rgb(24, 26, 29);
+$dark-500: rgb(34, 37, 43);
+$dark-400: rgb(43, 48, 59);
+$dark-300: rgb(52, 60, 76);
+
+$lavender: rgb(126, 139, 233);
+
+$light: rgb(205, 213, 231);
+$light-100: mix($white, $light);
+
+// New Lavender
+$lavender: rgb(137, 154, 239);
+
+// Saturated Dark (Lab to sRGB)
+$dark-600: rgb(15, 17, 20); //  5 0  -2
+$dark-500: rgb(25, 28, 33); // 10 0  -4
+$dark-400: rgb(33, 38, 46); // 15 0  -6
+$dark-300: rgb(42, 49, 60); // 20 0  -8
+$dark-200: rgb(50, 60, 74); // 25 0 -10
+$dark-100: rgb(60, 71, 89); // 30 0 -12
+
+// Desaturated Dark (Lab to sRGB)
+$dark-600: rgb(16, 17, 18); //  5 0 -1
+$dark-500: rgb(26, 28, 30); // 10 0 -2
+$dark-400: rgb(36, 38, 42); // 15 0 -3
+$dark-300: rgb(45, 49, 54); // 20 0 -4
+$dark-200: rgb(55, 60, 67); // 25 0 -5
+$dark-100: rgb(66, 71, 80); // 30 0 -6

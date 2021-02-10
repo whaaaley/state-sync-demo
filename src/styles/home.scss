@@ -1,0 +1,80 @@
+
+%input-text {
+  margin: 12px;
+  padding: 0 24px;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  outline: none;
+  font: 400 16px/48px sans-serif;
+  background: $dark-600;
+
+  &:focus {
+    border-color: $lavender;
+  }
+}
+
+.home-iframes {
+  display: flex;
+
+  div {
+    flex: 1;
+    display: flex; // for buttons
+    flex-flow: column; // for buttons
+    padding: 12px;
+  }
+
+  iframe {
+    margin: 0 auto;
+    border-radius: 6px;
+  }
+}
+
+.home-main {
+  margin: auto;
+  padding: 12px;
+  border-radius: 12px;
+  background: $dark-300;
+
+  input {
+    @extend %input-text;
+
+    width: calc(100% - 24px); // annoying
+  }
+}
+
+.home {
+  display: flex;
+  height: 100vh;
+}
+
+// DEMO
+
+.demo {
+  padding: 12px;
+
+  input {
+    @extend %input-text;
+
+    width: calc(100% - 24px); // annoying
+  }
+
+  div {
+    height: 128px;
+    margin: 12px;
+    border-radius: 6px;
+    background: $dark-100;
+  }
+}
+
+// Button
+
+// .button {
+//   display: block;
+//   margin: 24px auto;
+//   padding: 0 24px;
+//   border-radius: 6px;
+//   color: $dark-600;
+//   font: 600 14px/36px sans-serif;
+//   background: $lavender;
+//   cursor: pointer;
+// }
